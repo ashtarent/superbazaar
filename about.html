@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <h1>About Super Bazaar</h1>
+    <p>Where community meets culture and quality since 1990</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="deals.html">Deals</a>
+    <a href="delivery.html">Delivery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="story">
+    <h2>Our Journey</h2>
+    <p><strong>Super Bazaar</strong> has been the heartbeat of South Asian culture in Buffalo since <strong>1990</strong>. Started by brothers <strong>Taraq Khan</strong> and <strong>Ashaq Khan</strong>, our store began as a place for community connection and South Asian staples. From offering rides to students on weekends to delivering groceries during the pandemic, our mission has always been care, culture, and community.</p>
+  </section>
+
+  <section class="owners">
+    <h2>Meet the Founders</h2>
+    <div class="owner-cards">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="images/taraqkhan.jpeg" alt="Taraq Khan">
+            <h3>Taraq Khan</h3>
+          </div>
+          <div class="flip-back">
+            <p>Co-founder & President<br>Loves connecting with students and sharing chai wisdom!</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="images/ashaq-khan.png" alt="Ashaq Khan">
+            <h3>Ashaq Khan</h3>
+          </div>
+          <div class="flip-back">
+            <p>Co-founder & Community Builder<br>Known for helping students and stocking only the best mangoes!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Store Gallery</h2>
+    <p>Explore our aisles, collections, and rich flavors</p>
+    <div class="gallery-grid">
+      <img src="images/store1.jpeg" alt="Store Image 1">
+      <img src="images/store2.jpeg" alt="Store Image 2">
+      <img src="images/store3.jpeg" alt="Store Image 3">
+      <img src="images/store4.jpeg" alt="Store Image 4">
+      <img src="images/store5.jpeg" alt="Store Image 5">
+      <img src="images/store6.jpeg" alt="Store Image 6">
+      <img src="images/store7.jpeg" alt="Store Image 7">
+      <img src="images/store8.jpeg" alt="Store Image 8">
+      <img src="images/store9.jpeg" alt="Store Image 9">
+      <img src="images/store10.jpeg" alt="Store Image 10">
+      <img src="images/store11.jpeg" alt="Store Image 11">
+      <img src="images/store12.jpeg" alt="Store Image 12">
+      <img src="images/store13.jpeg" alt="Store Image 13">
+      <img src="images/store14.jpeg" alt="Store Image 14">
+      <img src="images/store15.jpeg" alt="Store Image 15">
+      <img src="images/store16.jpeg" alt="Store Image 16">
+      <img src="images/store17.jpeg" alt="Store Image 17">
+      <img src="images/store18.jpeg" alt="Store Image 18">
+      <img src="images/store19.jpeg" alt="Store Image 19">
+      <img src="images/store20.jpeg" alt="Store Image 20">
+      <img src="images/store21.jpeg" alt="Store Image 21">
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>In The News</h2>
+    <div class="news-row">
+      <img src="images/news1.jpeg" alt="Buffalo News Feature">
+      <img src="images/news2.jpeg" alt="News Article Closeup">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Super Bazaar Buffalo</p>
+  </footer>
+
+<!-- Fullscreen Lightbox Overlay -->
+  <div id="lightbox-overlay" onclick="this.style.display='none'">
+    <img src="" alt="Zoomed Image">
+  </div>
+
+  <script>
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+      img.onclick = () => {
+        const overlay = document.getElementById('lightbox-overlay');
+        overlay.style.display = 'flex';
+        overlay.querySelector('img').src = img.src;
+      }
+    });
+  </script>
+</body>
+</html>
